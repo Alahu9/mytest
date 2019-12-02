@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册界面</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;}
+        /* 设置背景图，字体设置为微软雅黑 */
+        body{
+            background:url(456.jpg);
+            font-family: "方正仿宋", sans-serif;
+        }
+        /* 整个登录框的css，并使用绝对定位居中 */
+        .login {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -150px 0 0 -150px;
+            width:300px;
+            height:300px;
+        }
+        .login h1 { color:deepskyblue;
+            letter-spacing:2px;
+            text-align:center;
+            margin-bottom:20px;
+        }
+        .sjh{
+            padding:10px;
+            width:100%;
+            color:deepskyblue;
+            margin-bottom:10px;
+            background:white;
+            border: 2px solid deepskyblue;
+            border-radius:4px;
+            letter-spacing:2px;
+        }
+        .yzm{
+            padding:10px;
+            width:68%;
+            color:deepskyblue;
+            margin-bottom:10px;
+            background:white;
+            border: 2px solid deepskyblue;
+            border-radius:4px;
+            letter-spacing:2px;
+        }
+        .hq{
+            width:30%;
+            padding:10px;
+            background:white;
+            border:2px solid deepskyblue;
+            border-radius:4px;
+            cursor:pointer;
+            color:deepskyblue;
+        }
+        .qr{
+            width:100%;
+            padding:10px;
+            background:white;
+            border:2px solid deepskyblue;
+            border-radius:4px;
+            cursor:pointer;
+            color:deepskyblue;
+            align:center;
+        }
+    </style>
+</head>
+<body>
+<div class="login">
+    <h1>闻豪地产</h1>
+    <form action="http://localhost:8080/lanqiao1124/RegisterServlet?key=1" method="post">
+        <input class="sjh" type="text" name="phone" placeholder="请输入手机号码" required="required"><br>
+        <input class="yzm" type="password" name="password" placeholder="请输入验证码">
+        <button class="hq" type="submit">获取验证码</a></button><br>
+        <button class="qr" type="submit">确认注册</a></button>
+    </form>
+</div>
+</body>
+</html>
